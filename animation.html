@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BloomBox Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+ background: linear-gradient(to bottom, white 30%, lightpink 40%);
+       
+        }
+
+     .animation-text a {
+            font-size: 4em;
+            font-weight: bold;
+            color: white;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+text-align: center;
+text-decoration: none;
+        }
+      
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="animation-text">
+    <a href="index.html">BLOOMBOX</a>
+    </div>
+
+</body>
+</html>
